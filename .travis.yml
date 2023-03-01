@@ -21,3 +21,8 @@ deploy:
   region: "us-west-2"
   app: "django-assignment-1"
   env: "django-env-1"
+  on:
+    repo: omarkhan5299/swe1-app
+    branches:
+      only:
+        - main
