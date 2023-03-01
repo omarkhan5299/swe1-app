@@ -24,7 +24,7 @@ deploy:
   env: "django-env-1"
   on:
     repo: omarkhan5299/swe1-app
-    branches:
+    branch:
       only:
         - main
         - test1
