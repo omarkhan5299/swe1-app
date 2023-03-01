@@ -12,6 +12,8 @@ before_script:
 script:
   - python manage.py test
 
+before_deploy: "echo 'ready?'"
+
 deploy:
   provider: elasticbeanstalk
   access_key_id:
@@ -27,4 +29,3 @@ deploy:
     branch:
       only:
         - main
-        - test1
