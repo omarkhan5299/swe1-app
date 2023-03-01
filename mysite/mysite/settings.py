@@ -22,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = os.environ['SECRET']
-SECRET_KEY = 'django-insecure-ltufbp*-6z(gmvykhm&!a-o!ml28i7y2t7^!tlxzd3uk%*#kai'
+SECRET_KEY = "django-insecure-ltufbp*-6z(gmvykhm&!a-o!ml28i7y2t7^!tlxzd3uk%*#kai"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env-1.eba-b5y7rr8m.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ["django-env-1.eba-b5y7rr8m.us-west-2.elasticbeanstalk.com"]
 
 
 # Application definition
@@ -91,9 +91,15 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
-    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",},
-    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",},
-    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
 ]
 
 
