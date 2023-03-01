@@ -6,17 +6,17 @@ install:
   - pip install -r requirements.txt
 
 before_script:
-  - echo "Starting Black Check"
-  - black --check .
   - echo "Installing Flake8"
   - python -m pip install flake8
-  - flake8 .
   - cd mysite
   - python manage.py migrate
+  - cd ..
 
 script:
-  - python manage.py test
-  - coverage run manage.py test
+  - black --check .
+  - flake8 .
+  - python mysite/manage.py test
+  - coverage run mysite/manage.py test
   - coveralls
 
 before_deploy: "echo 'ready?'"
