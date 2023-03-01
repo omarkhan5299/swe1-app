@@ -8,6 +8,7 @@ install:
 before_script:
   - echo "Starting Black Check"
   - black --check .
+  - flake8 .
   - cd mysite
   - python manage.py migrate
 
