@@ -26,3 +26,4 @@ deploy:
     branches:
       only:
         - main
+        - test1
