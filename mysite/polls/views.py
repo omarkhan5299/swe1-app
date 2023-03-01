@@ -52,7 +52,7 @@ def vote(request, question_id):
             "polls/detail.html",
             {
                 "question": question,
-                "error_message": "You didn't select a choice. Please select a choice and vote again! Thank you.",
+                "error_message": "Please select a choice before voting.",
             },
         )
     else:
