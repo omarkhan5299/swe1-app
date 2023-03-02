@@ -21,6 +21,7 @@ script:
 
 after_script:
   - cd mysite
+  - ls -a
 
 before_deploy:
   - echo "Working Directory check"
