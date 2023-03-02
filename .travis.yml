@@ -19,13 +19,8 @@ script:
   - coverage run mysite/manage.py test
   - coveralls
 
-after_script:
-  - cd mysite
-  - ls -a
-
 before_deploy:
-  - echo "Working Directory check"
-  - pwd
+  - cd mysite
 
 deploy:
   provider: elasticbeanstalk
