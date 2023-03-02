@@ -19,6 +19,9 @@ script:
   - coverage run mysite/manage.py test
   - coveralls
 
+after_script:
+  - cd mysite
+
 before_deploy: "echo 'ready?'"
 
 deploy:
